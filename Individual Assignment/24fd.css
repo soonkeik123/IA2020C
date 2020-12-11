@@ -1,0 +1,131 @@
+.page-header {
+    line-height: 1;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.page-header-logo {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+    font-size: 2.25rem;
+}
+  
+.page-header-logo:hover {
+    text-decoration: none;
+}
+  
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+}
+  
+.display-4 {
+    font-size: 2.5rem;
+}
+
+@media (min-width: 768px) {
+    .display-4 {
+        font-size: 3rem;
+    }
+}
+  
+.nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+}
+  
+.nav-scroller .nav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+  
+.nav-scroller .nav-link {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    font-size: .875rem;
+}
+  
+.card-img-right {
+    height: 100%;
+    border-radius: 0 3px 3px 0;
+}
+  
+.flex-auto {
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+}
+
+.post {
+    margin-bottom: 4rem;
+}
+.post-title {
+    margin-bottom: .25rem;
+    font-size: 2.5rem;
+}
+
+#youtubeLink .card-header{
+    background-color:#a85d16 ;
+}
+#youtubeLink .card-body{
+    background-color:rgba(187, 99, 16, 0.585);
+}
+
+.page-footer {
+    padding: 1.0rem 0;
+    color: #999;
+    text-align: center;
+    background-color: #840808a8;
+}
+.page-footer p:last-child {
+    margin-bottom: 0;
+}
+footer p a:link, footer p a:visited {
+    color :white;
+    font-size: 1.4em;
+}
+footer p a:active {
+    color: black;
+}
+
+#sideNavButton a {
+    position: fixed;
+    left: -80px;
+    transition: 0.1s;
+    padding: 15px;
+    width: 120px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+}
+#sideNavButton a:hover {
+      left: 0;
+}
+
+#history {
+    top: 20px;
+    background-color: #844216;
+}
+#founders {
+    top: 80px;
+    background-color: #965123;
+}
+#concept {
+    top: 140px;
+    background-color: #a96030;
+}
+#first24FD {
+    top: 229px;
+    background-color: #b17045;
+}
+#video {
+    top: 288px;
+    background-color: #c18964;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>testing JavaScript</title>
+    </head>
+    <body>
+        <p>Testing JavaScript</p>
+        <script src="index.js"></script>
+        <h2>Totday is</h2>
+        <script>
+            var myDate = new Date();
+            var month = myDate.getMonth()+1;
+            var day = myDate.getDate();
+            var year = myDate.getFullYear();
+            document.write(month+"/"+day+"/"+year);
+
+        </script>
+        
+        <form id="verify">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="age">Age:</label>
+            <input type="text" id="age" name="age">
+            <button type="button" onclick="checkName();">Send Information</button>
+        </form>
+        
+    </body>
+</html>
