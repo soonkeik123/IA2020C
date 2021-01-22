@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="LIM SOON KEIK B200040A"> 
+    <link rel="stylesheet" href="/css&js/final.css">
+    <!-- Bootstrap core CSS -->
+    <link href="/css(template)/business-casual.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/css(template)/business-casual.css" rel="stylesheet">
+    <link rel="stylesheet" href="/vendor(template)/bootstrap/css/bootstrap.css">
+    <title>料亭吉祥</title>
+</head>
+<body>
+    <h1 class="site-heading text-center text-white d-none d-lg-block">
+        <span class="site-heading-upper mb-3">Kisho Japanese Restaurant</span>
+        <span class="site-heading-lower">料亭吉祥</span>
+    </h1>
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Kisho Janapese Restaurant</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav mx-auto">
+                <li class="nav-item px-lg-4">
+                    <a class="nav-link text-uppercase text-expanded" href="index.html">Home
+                    <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item px-lg-4">
+                    <a class="nav-link text-uppercase text-expanded" href="Q2.html">History</a>
+                </li>
+                <li class="nav-item px-lg-4">
+                    <a class="nav-link text-uppercase text-expanded" href="Q3.html">Ingredients</a>
+                </li>
+                <li class="nav-item active px-lg-4">
+                    <a class="nav-link text-uppercase text-expanded" href="Q4.html">Booking</a>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-section booking text-light">
+        <div class="container-fluid">
+            <div class="booking-content">
+            <form name="myForm" action="Q4.html" enctype="multipart/form-data" onsubmit="return validateForm()" method="post">
+                <br>
+                <h2 style="font-size: 3rem; font-weight: 100; text-align: center;">Booking Form</h2>
+                <div  style="margin-left:22%;">
+                <input type="text"  style="height:40px; width: 23%; text-align:left !important; " id="Firstname" name="Firstname" placeholder="Fisrt Name" required>
+                <input type="text" style="height:40px; width: 49.7%; "id="Lastname"name="Lastname" placeholder="Last Name" required>
+                <br>
+                <br>
+                <input type="text" style="height:40px; width: 73%;" id="contactNumber" maxlength="12" onkeyup="value=value.replace(/[^\d]/g,'')" onblur="value=value.replace(/[^\d]/g,'')" name="contactNumber"  placeholder="Phone Number" required>
+                <br>
+                <br>
+                <input type="email" style="height:40px; width: 73%;" name="email" id="email"  placeholder="Email" required><br>
+                <br>
+                <label for="date" class="date">Date:</label>
+                <input type="date" name="date" id="date" required>
+                <br>
+                <br>
+                <label for="time" class="time">Time(07:00-20:00):</label>
+                <input id="appt-time" type="time" name="appt-time" min="07:00" max="20:00" required>
+                <span class="validity"></span>
+                <br>
+                <br>
+                <label for="person" class="person">Person:</label>
+                <input type="number" id="person" name="person"min="1" max="30" required>
+                <br>
+                <br>
+                <label for="person" class="session">Session:</label>
+                <select name="session" id="session" required>
+                    <option value="Lunch">Lunch</option>
+                    <option value="Dinner">Dinner</option>
+                </select>
+                <br>
+                <br>
+                <textarea placeholder="Any allergy? Any special request? Please tell us." name="message" id="message" rows="4" cols="70"></textarea>
+                <br>
+                <br>
+                <button class="button" id="submit">Send</button>
+                <br>
+                <br>
+                </div>
+                <script src="css&js/booking.js"></script>
+            </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer text-light text-center py-3">
+        <div class="container">
+            <p>― 料亭吉祥  Kisho Japanese Restaurant 日本料理店吉祥―
+                <br>
+                住所 Address 地址：59, Jalan Perang, Taman Pelangi, 80400 Johor Bahru.
+                <br>
+                電話 Tel 电话：+60 7-335-2312
+                <br>
+                Facebook : www.facebook.com/KishoJohor</p>
+            <p class="m-0 small">Copyright &copy; Wonder Coffee. All right reserved.</p>
+        </div>
+    </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="/vendor(template)/jquery/jquery.min.js"></script>
+  <script src="/vendor(template)/jquery/jquery.slim.js"></script>
+  <script src="/vendor(template)/bootstrap/js/bootstrap.bundle.js"></script>
+  <script src="/vendor(template)/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
